@@ -19,6 +19,15 @@
   background-color: #FFF;
 }
 
+.bg-a >:first-child,
+.bg-b >:first-child{
+  margin-top: 60px;
+}
+.bg-a >:last-child,
+.bg-b >:last-child{
+  margin-bottom: 60px;
+}
+
 .product h1 {
   /* Apenas os leitores de página vão pegar a informação */
   display: none;
@@ -56,4 +65,27 @@ section p {
 
 #technology .tab-content .container img {
   max-width: 85vw;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover { 
+  border: 2px solid black;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+}
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
 }
