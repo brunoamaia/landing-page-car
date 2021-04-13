@@ -1,0 +1,39 @@
+.bg-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+
+  min-height: 80vh;
+  width: 100%;
+  background-color: #F2F2F2;
+}
+.bg-b {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+
+  min-height: 80vh;
+  width: 100%;
+  background-color: #FFF;
+}
+
+.product h1 {
+  /* Apenas os leitores de página vão pegar a informação */
+  display: none;
+}
+
+section p {
+  /* Justificar o texto - o Bootstrap oficial não tem texto justificado*/
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 2em;
+}
+
+.col.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}

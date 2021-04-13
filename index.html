@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    rel="icon"
+    href="./src/icons/logo.svg"
+  />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+    crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <title>BMW VIsion iNext</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./">
+          <img src="./src/icons/logo.svg" alt="logo da BMW" width="40" height="40">
+        </a>
+        <button
+          class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="z-index: 1;"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#technology">Tecnologia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product">
+      <h1>Conceito de carro elétrico da BMW</h1>
+      <img 
+        src="./src/img/header_banner.jpg" class="img-fluid"
+        alt="imagem do conceito de carro elétrico da BMW"
+      >
+    </section>
+
+    <section class="bg-a">
+      <article class="container">
+        <h2>Symbol of a new age.</h2>
+        <p class="lead">
+          The BMW Vision iNEXT is fully electric, fully connected and offers highly 
+          autonomous driving. The series-production model, set to become the company’s 
+          new technology flagship, will be built at BMW Group Plant Dingolfing from 2021. 
+          It will integrate the BMW Group’s strategic areas of innovation (“D+ACES”) and bring them to the roads.
+        </p>      
+        <p >
+          Individual mobility is facing changes. Topics such as autonomous driving, 
+          electrification and increasing connectivity are opening up new experiences. 
+          Going forward, drivers will have much more control over how they use their 
+          time on the road. With the BMW Vision iNEXT, we seek to make a bold and 
+          positive statement for the future and provide a human response to the question 
+          “How will the BMW Group design a car that doesn’t have to be driven any more – but can be?”
+        </p>
+
+      </article>
+      <div class="container-fluid text-end">
+        <img 
+          src="./src/img/new_age.png" class="float-end"
+          alt="imagem do conceito de carro elétrico da BMW"
+        >
+      </div>
+    </section>
+
+    <section class="bg-b">
+      <article id="technology" class="container">
+        <h2>FROM HIGH-TECH TO SHY TECH.</h2>
+        
+        <p>The pioneering technologies of the BMW Vision iNEXT.</p>
+        <p>
+          Practically invisible – but always available. At first glance, 
+          the only displays are in the driver’s area: there are no other 
+          displays or buttons to be seen. In the future, technology will no 
+          longer be the focus; people will be the focus. Surfaces such as wood 
+          or fabric are controllable via gesture or voice control, so digital 
+          technologies only become visible when the driver or passengers want 
+          to use them. It’s an intelligent step towards the future.
+        </p>
+
+        <nav>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button 
+                class="nav-link active " id="material-tab" data-bs-toggle="tab"
+                data-bs-target="#material" type="button" role="tab"
+                aria-controls="material" aria-selected="true"
+              >
+                Intelligent Material
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button 
+                class="nav-link" id="assistant-tab" data-bs-toggle="tab"
+                data-bs-target="#assistant" type="button" role="tab"
+                aria-controls="assistant" aria-selected="false"
+              >
+                Intelligent Personal Assistant
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button 
+                class="nav-link" id="beam-tab" data-bs-toggle="tab"
+                data-bs-target="#beam" type="button" role="tab"
+                aria-controls="beam" aria-selected="false"
+              >
+                Intelligent Beam
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active" id="material" role="tabpanel"
+              aria-labelledby="material-tab"
+            >
+              <div class="container">
+                <div class="row align-items-start">
+                  <div class="col">
+                    <img class="w-100" src="./src/img/intelligent_material.jpg" alt="">
+                  </div>
+                  <div class="col text">
+                    <h2>Intelligent Material</h2>
+                    <p>
+                      Always at your side: Controlled by voice command, the 
+                      Intelligent Personal Assistant supports you wherever you go. 
+                      The visionary technology knows all of the vehicle’s 
+                      capabilities and provides you with interactive advice. At 
+                      the same time, it learns from you over time and adapts 
+                      itself to your behaviour. The Intelligent Personal Assistant 
+                      is seamlessly interlinked with BMW’s digital ecosystem, 
+                      making it possible for drivers to control their smart home 
+                      systems. In the future, drivers will work together with 
+                      their cars in perfect harmony. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade" id="assistant" role="tabpanel"
+              aria-labelledby="assistant-tab"
+            >
+              <div class="container">
+                <div class="row align-items-start">
+                  <div class="col">
+                    <img class="img-fluid" src="./src/img/intelligent_assistant.jpg" alt="">
+                  </div>
+                  <div class="col text">
+                    <h2>Intelligent Personal Assistant</h2>
+                    <p>
+                      The BMW Vision iNEXT can read your needs from your fingertips. 
+                      When driving in “Boost” mode, the control display can be operated 
+                      using touch functionality. In “Ease” mode, the wooden surface of 
+                      the furniture-like centre console can be used instead. Whenever 
+                      any inputs are made, points of light follow the finger like magic, 
+                      providing visual feedback. The Jacquard cloth in the rear likewise 
+                      comes to life at the touch of a finger and allows music playback 
+                      to be controlled using various gestures, which are given visual 
+                      emphasis by LEDs that light up underneath the cloth. Thanks to Shy 
+                      Tech, unexpected surfaces can instantly transform into 
+                      extraordinary user interfaces.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade" id="beam" role="tabpanel"
+              aria-labelledby="beam-tab"
+            >
+              <div class="container">
+                <div class="row align-items-start">
+                  <div class="col">
+                    <img class="img-fluid" src="./src/img/intelligent_beam.jpg" alt="">
+                  </div>
+                  <div class="col text">
+                    <h2>Intelligent Beam</h2>
+                    <p>
+                      Projecting the future: The Intelligent Beam in the BMW Vision iNEXT 
+                      is a ground-breaking reinvention of the modern screen. It creates 
+                      interactive projected surfaces within the interior, and the 
+                      technology may soon replace standard displays. The intelligent light 
+                      recognises objects and follows them. The text in a printed book, for 
+                      example, can be supplemented by images, moving contents and 
+                      interactive graphics, all of which can be controlled by touch. 
+                      Dynamic projection mapping makes sure that the contents are always 
+                      displayed correctly even when the surface is in motion.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        
+      </article>
+    </section>
+
+
+    <section id="contact" class="bg-a">
+      <h2 class="text-center">Entre em contato</h2>
+
+      <form class="container" action="">
+        <fieldset>
+          <legend>Insira as informações a seguir</legend>
+          <div class="mb-3">
+            <label for="emailAddress" class="form-label">
+              Endereço de email
+            </label>
+            <input
+              type="email" class="form-control" id="emailAddress"
+              placeholder="name@example.com"
+            >
+          </div>
+          <div class="mb-3">
+            <label for="textContend" class="form-label">Dúvida ou sugestão</label>
+            <textarea
+              class="form-control" id="textContend" rows="3"
+              placeholder="Gostaria de fazer a simulação ..."
+            ></textarea>
+          </div>
+        </fieldset>
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"
+  ></script>
+</body>
+
+</html>
