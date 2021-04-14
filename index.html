@@ -108,6 +108,10 @@
           É um passo inteligente em direção ao futuro. 
         </p>
 
+        <!-- 
+          Gerar interface com guias. Cria regiões tabuláveis para mostrar as tecnologias.
+          Material | Assistente | Feixe
+        -->
         <nav>
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -242,6 +246,7 @@
     <section class="bg-a">
       <div class="container">
         <h2>Fotos</h2>
+        <!-- Inserir Carrossel -->
         <div id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
@@ -321,6 +326,10 @@
         <br>
         <h3>Escolha o método que lhe for mais conveniente.</h3>
         <br>
+        <!-- 
+          Gerar interface com guias. Cria regiões tabuláveis para entrar em contato.
+          Email | Whatsapp
+        -->
         <nav>
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -343,32 +352,32 @@
                 Whatsapp
               </button>
             </li>
-            
           </ul>
           <div class="tab-content" id="myTabContent">
             <div
               class="tab-pane fade show active" id="email" role="tabpanel"
               aria-labelledby="email-tab"
             >
-            <form action="">
+            <form method="GET" name="formcontact" action="#">
               <fieldset>
-                <legend>Insira as informações a seguir</legend>
+                <legend>Dados para enviar o email</legend>
                 <div class="mb-3">
                   <label for="emailAddress" class="form-label">
                     Endereço de email
                   </label>
                   <input
-                    type="email" class="form-control" id="emailAddress"
-                    placeholder="name@example.com"
+                    type="email" class="form-control" id="emailAddress" 
+                    name="emailAddress" placeholder="name@example.com" required
                   >
                 </div>
                 <div class="mb-3">
                   <label for="textContend" class="form-label">Dúvida ou sugestão</label>
                   <textarea
-                    class="form-control" id="textContend" rows="3"
-                    placeholder="Gostaria de fazer a simulação ..."
+                    class="form-control" id="textContend" rows="3" name="textContend"
+                    placeholder="Gostaria de fazer a simulação ..." required
                   ></textarea>
                 </div>
+                <button type="submit" class="btn btn-dark">Enviar e-mail</button>
               </fieldset>
             </form>
             </div>
@@ -383,7 +392,10 @@
                 em <strong>Iniciar conversa</strong> para poder conversar pelo whatsapp web.
               </p>
               <p>
-                <a href="https://api.whatsapp.com/send?phone=5564999989707">Abrir conversa</a>
+                <a class="link-success" href="https://api.whatsapp.com/send?phone=5564999989707">
+                  <img class="whatsapp" src="./src/icons/logo-whatsapp.svg" width="15" alt="simbolo do whatsapp">
+                  Abrir conversa
+                </a>
               </p>
             </div>
           </div>
@@ -414,6 +426,7 @@
     integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
     crossorigin="anonymous"
   ></script>
+  <script type="text/javascript" src="./js/script.js"></script>
 </body>
 
 </html>
