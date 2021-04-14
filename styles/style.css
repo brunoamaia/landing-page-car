@@ -89,3 +89,76 @@ section p {
   content: '<';
   font-size: 55px;
 }
+
+.fit-image {
+  overflow: hidden;
+  height: 10vw;
+  width: 21vw;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.gallery img {
+  height: 10vw;
+  width: 21vw;
+  transition: 2s;
+}
+.gallery img:hover {
+  transform:scale(1.5);
+  -ms-transform:scale(1.5);
+  -moz-transform:scale(1.5);
+  -webkit-transform:scale(1.5);
+  -o-transform:scale(1.5);
+}
+
+@media (max-width: 650px) {
+  .fit-image {
+    height: 10vw;
+    width: 26vw;
+  }
+  .gallery img {
+    width: 26vw;
+  }
+}
+
+.modal-gallery {
+  position: fixed;
+}
+
+.modal-gallery img {
+  height: auto;
+  width: 100%;
+}
+
+.modal-gallery.enable {
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+.modal-gallery .carousel {
+  top: 50px;
+}
+
+.close {
+  position: absolute;
+  top: 2px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  padding: 15px;
+  height: 40px;
+  width: 40px;
+  margin: 0;
+  border-radius: 50%;
+  text-align: center;
+  
+  font-size: 30px;
+  cursor: pointer;
+}

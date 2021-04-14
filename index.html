@@ -46,6 +46,9 @@
               <a class="nav-link active" href="#technology">Tecnologia</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link active" href="#pictures">Fotos</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link active" href="#contact">Contato</a>
             </li>
           </ul>
@@ -93,8 +96,8 @@
       </div>
     </section>
 
-    <section class="bg-b">
-      <article id="technology" class="container">
+    <section class="bg-b" id="technology">
+      <article  class="container">
         <h2>Alta tecnologia nos detalhes</h2>
         
         <p>As tecnologias pioneiras do BMW Vision iNEXT.</p>
@@ -243,11 +246,11 @@
       </article>
     </section>
 
-    <section class="bg-a">
+    <section class="bg-a" id="pictures">
       <div class="container">
         <h2>Fotos</h2>
         <!-- Inserir Carrossel -->
-        <div id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <nav id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
               <img src="./src/img/carousel00.jpg" class="d-block w-100" 
@@ -311,9 +314,112 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+        </nav>
+        <br>
+        <p>
+          O BMW Vision iNEXT pode ser um local de relaxamento, interação, entretenimento 
+          ou concentração - as possibilidades são tão múltiplas quanto as necessidades 
+          dos ocupantes. Consequentemente, a cabine é mais semelhante a um “espaço de 
+          convivência” confortável e elegantemente decorado sobre rodas - um novo 
+          “Espaço Favorito”. No modo “Direção”, o volante e os visores são posicionados 
+          claramente para o motorista. Quando o modo "Facil" é ativado, o ambiente 
+          imediato do motorista muda: o volante se retrai ligeiramente, criando uma 
+          sensação de espaço mais aberta. Dentro do cockpit de tamanho generoso, 
+          a área do motorista é definida pelos dois painéis de exibição digital 
+          visíveis e pelo volante. 
+        </p>
+
+        <br>
+        <div class="gallery row justify-content-md-center">
+          <div class="col" onclick="insertModalGallery(0)">
+            <div class="fit-image">
+              <img
+                src="./src/img/carousel00.jpg" 
+                alt="foto mostrando o painel do carro. É possí observar duas telas,
+                sendo uma grande no meio do painel e uma pequena na frente do volante.
+                Também é possivel observar os pedais de acelerador e freio"
+              >
+            </div>
+          </div>
+          <div class="col" onclick="insertModalGallery(1)">
+            <div class="fit-image">
+              <img
+                src="./src/img/carousel01.jpg" 
+                alt="foto que foca no volante do carro e as telas que ficam no painel"
+              >
+            </div>
+          </div>
+          <div class="col" onclick="insertModalGallery(2)">
+            <div class="fit-image">
+              <img
+                src="./src/img/carousel02.jpg" 
+                alt="foto mostrando duas passagerias e um motorista. As passagerias
+                demonstram ter bastante espaço"
+              >
+            </div>
+          </div>
+          <div class="col" onclick="insertModalGallery(3)">
+            <div class="fit-image">
+              <img
+                src="./src/img/carousel03.jpg" 
+                alt="foto do carro embaixo de uma árvore com os faróis e alguns LEDs
+                ligados"
+              >
+            </div>
+          </div>
+          <div class="col" onclick="insertModalGallery(4)">
+            <div class="fit-image">
+              <img
+                src="./src/img/carousel04.jpg" 
+                alt="foto mostrando a parte traseira do carro e a lateral esquerda
+                no por do sol. As lanternas e os LEDs estão ligados"
+              >
+            </div>
+          </div>
+          <div class="col" onclick="insertModalGallery(5)">
+            <div class="fit-image">
+              <img
+                src="./src/img/carousel05.jpg" 
+                alt="foto do carro parado com a porta aberta em uma estrada de pedra
+                tem uma mulher parada ao lado do carro sorrindo"
+              >
+            </div>
+          </div>
+          <div class="col" onclick="insertModalGallery(6)">
+            <div class="fit-image">
+              <img
+                src="./src/img/carousel06.jpg" 
+                alt="foto da frente do carro com o farol e os LEDs ligados. 
+                Existem muitos pontos de luz no chão"
+              >
+            </div>
+          </div>
+          <div class="col" onclick="insertModalGallery(7)">
+            <div class="fit-image">
+              <img
+                src="./src/img/carousel07.jpg" 
+                alt="foto do carro em movmento em uma estrada de pedra"
+              >
+            </div>
+          </div>
+          <div class="col" onclick="insertModalGallery(8)">
+            <div class="fit-image">
+              <img
+                src="./src/img/carousel08.jpg" 
+                alt="foto do carro parado embaixo de uma árvore com as portas fechadas
+                e os faróis acesos"
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <div class="modal-gallery">
+      <!-- 
+        Inserir Modal com o Carrossel das fotos
+        foi inserido fora da classe 'container' para poder pegar toda a tela
+      -->
+    </div>
 
     <section id="contact" class="bg-b">
       <div class="container">
@@ -427,6 +533,7 @@
     crossorigin="anonymous"
   ></script>
   <script type="text/javascript" src="./js/script.js"></script>
+  <script type="text/javascript" src="./js/modalGallery.js"></script>
 </body>
 
 </html>
