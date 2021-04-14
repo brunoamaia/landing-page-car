@@ -4,7 +4,7 @@
   align-items: center;
   justify-content:center;
 
-  min-height: 80vh;
+  min-height: 60vh;
   width: 100%;
   background-color: #F2F2F2;
 }
@@ -14,7 +14,7 @@
   align-items: center;
   justify-content:center;
 
-  min-height: 80vh;
+  min-height: 60vh;
   width: 100%;
   background-color: #FFF;
 }
@@ -161,4 +161,9 @@ section p {
   
   font-size: 30px;
   cursor: pointer;
+}
+
+footer .bg-a{
+  min-height: 100px;
+  width: 100%;
 }
