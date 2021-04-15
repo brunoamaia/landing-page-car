@@ -33,6 +33,11 @@
   display: none;
 }
 
+.product img {
+  height: 35vw;
+  width: 100%;
+}
+
 section p {
   /* Justificar o texto - o Bootstrap oficial não tem texto justificado*/
   text-align: justify;
@@ -123,6 +128,88 @@ section p {
 
 .modal-gallery {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame-modal .picture {
+  height: auto;
+  width: 98vw;
+  transition: 1s;
+}
+
+.container-modal {
+  position: relative;
+}
+
+.control button {
+  position: absolute;
+  top: calc(22vw - 40px);
+
+  height: 100px;
+  width: 50px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 20px;
+}
+
+.control button img {
+  padding-bottom: 10px;
+}
+
+.control .prev {
+  left: 50px;
+}
+.control .next {
+  right: 50px;
+}
+
+@media (max-width: 650px) {
+  .control button {
+    top: calc(22vw - 25px);
+    height: 50px;
+    width: 40px;
+  }
+  .control .prev {
+    left: 10px;
+  }
+  .control .next {
+    right: 10px;
+  }
+  .control button img {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .control button {
+    width: 30px;
+  }
+  .control button img {
+    padding-bottom: 25px;
+  }
+}
+
+.animate-right {
+  position:relative;
+  animation:animateleft 0.4s;
+}
+@keyframes animateleft{
+  from{left:-100%; opacity:0} 
+  to{left:0;opacity:1}
+}
+
+.animate-left {
+  position:relative;
+  animation:animateright 0.4s;
+}
+@keyframes animateright{
+  from{right:-100%; opacity:0} 
+  to{right:0;opacity:1}
 }
 
 .modal-gallery img {
@@ -134,7 +221,7 @@ section p {
   top: 0;
   left: 0;
 
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   height: 100vh;
   width: 100%;
   z-index: 1;
@@ -166,4 +253,12 @@ section p {
 footer .bg-a{
   min-height: 100px;
   width: 100%;
+}
+
+footer .container {
+  margin: 20px auto !important;
+}
+
+footer .col-4 img {
+  padding-bottom: 4px;
 }

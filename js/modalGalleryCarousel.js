@@ -9,7 +9,7 @@ function insertModalGallery(value) {
     modalData.innerHTML = `
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item ${value === 0 ? 'active' :''}"
+        <div class="carousel-item ${value === 0 ? 'active' :''}">
           <img src="./src/img/carousel00.jpg" class="d-block w-100" 
             alt="foto mostrando o painel do carro. É possí observar duas telas,
             sendo uma grande no meio do painel e uma pequena na frente do volante.
