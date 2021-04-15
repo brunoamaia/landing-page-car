@@ -128,9 +128,14 @@ section p {
 
 .modal-gallery {
   position: fixed;
+}
+
+.modal-gallery-align {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 .frame-modal .picture {
@@ -226,6 +231,7 @@ section p {
   width: 100%;
   z-index: 1;
 }
+
 .modal-gallery .carousel {
   top: 50px;
 }

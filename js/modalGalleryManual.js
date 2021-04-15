@@ -72,17 +72,19 @@ function insertModalGallery(value) {
     
     let modalData = document.querySelector('.modal-gallery');
     modalData.innerHTML = `
-    <div class="frame-modal">
-      <div class="container-modal">
-        <div class="picture" >
-          <img src="${urls[value]}" alt="${labels[value]}">
-        </div>
-        <div class="control"> 
-          ${insertControlButtons(value)}
+    <div class="modal-gallery-align">
+      <div class="frame-modal">
+        <div class="container-modal">
+          <div class="picture" >
+            <img src="${urls[value]}" alt="${labels[value]}">
+          </div>
+          <div class="control"> 
+            ${insertControlButtons(value)}
+          </div>
         </div>
       </div>
+      <div class="close" onclick="insertModalGallery(0)"> X </div>
     </div>
-    <div class="close" onclick="insertModalGallery(0)"> X </div>  
     `;
   } else {
     window.document.querySelector('.modal-gallery').classList.remove('enable');
