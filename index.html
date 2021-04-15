@@ -523,24 +523,36 @@
                 será redirecionado(a) para uma pagina do whatsapp. Você deve clicar 
                 em <strong>Iniciar conversa</strong> para poder conversar pelo whatsapp web.
               </p>
-              <p>
+              <h4>
                 <a class="link-success" href="https://api.whatsapp.com/send?phone=5564999989707">
-                  <img class="whatsapp" src="./src/icons/logo-whatsapp.svg" width="15" alt="simbolo do whatsapp">
+                  <img class="whatsapp" src="./src/icons/logo-whatsapp.svg" width="40" alt="simbolo do whatsapp">
                   Abrir conversa
                 </a>
-              </p>
+              </h4>
             </div>
           </div>
         </nav>
 
         <br> <br>
-        <h4>Observação</h4>
-        <p>
-          <strong>Está página não possui nenhuma relação com a BMW.</strong> 
-          Ela foi construída como parte do processo seletivo da 
-          <a href="https://portalcatalao.com.br/">Portal Catalão</a>. Para ter mais informações acerca do 
-          protótipo, acesse as das páginas oficiais da <a href="https://www.bmw.ie/en/">BMW</a>.
-        </p>
+        <h4 class="text-danger">Observações:</h4>
+        <ul>
+          <li>
+            <strong>Está página não possui nenhuma relação com a BMW.</strong> 
+            Ela foi construída como parte do processo seletivo da 
+            <a href="https://portalcatalao.com.br/">Portal Catalão</a>. Para ter mais 
+            informações acerca do protótipo, acesse as das páginas oficiais da 
+            <a href="https://www.bmw.ie/en/">BMW</a>. E portanto, você não terá respostas
+            precisas sobre o modelo exibido ao entrar em contato.
+          </li>
+          <li>
+            Se a página for aberta no endereço '<span class="text-primary">
+            http://127.0.0.1:5500/</span>' (endereço da extensão Live Server) o formulário 
+            utilizará o método 'POST' e enviará os dados para: '<span class="text-primary">
+            http://localhost/testes/post/</span>' (XAMPP - utilizei o PHP para verificar 
+            os dados do formulário). Caso a página seja aberta em outro endereço/rota 
+            utilizará o método 'GET' (portanto os dados serão enviados para a url).
+          </li>
+        </ul>
       </div>
     </section>
   </main>
